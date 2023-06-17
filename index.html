@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gorcsa Gabor</title>
+</head>
+<body>
+    <h1>Gorcsa Gábor Soterline 08 elmeleti javascript</h1>
+
+<br>
+
+1. Mikor használandó a JS egy weboldal felépítése során, hogyan használható?<br>
+
+JS egy programozási nyelv, amelyet a weboldalak interaktivitásának és dinamizmusának hozzáadására használunk.
+A JS kód segítségével kezelhetjük a felhasználói eseményeket, manipulálhatjuk az adatokat, kommunikálhatunk API-kkal, létrehozhatunk animációkat és rengeteg egyébb lehetőség áll rendelkezésünkre.
+A JS kód használatához megkell hívnunk a kódokat, hogy lefussanak.
+Meghívási lehetőségek: Beágyazott JavaScript kód, Külső JavaScript fájl,  egy külön JavaScript fájl, amely tartalmazza a kívánt kódot eseménykezelők attribútumon keresztül.
+
+Eseménykezelők attribútumon keresztül:
+Egyes HTML elemekhez közvetlenül hozzáadhatunk eseménykezelők kódot az attribútumokon keresztül
+<br>
+<br>
+
+2. Sorold fel, hogyan határozhatunk meg egy értéket és röviden definiáld őket.<br>
+
+JavaScript-ben az értékek meghatározására változókat használunk. A változók a következőképpen definiálhatók röviden:
+VAR, LET, CONST, Ezek a kulcsszavak lehetővé teszik az értékek tárolását változókban.
+
+<br>
+<br>
+
+3.Ismertesd a literálókat.<br>
+Integer (egész)<br>
+Floating point (lebegőpontos)<br>
+Boolean (logikai)<br>
+String (sztring)<br>
+Regular expression (reguláris kifejezés)<br>
+Array (tömb)<br>
+Object (objektum)<br>
+
+<br>
+<br>
+
+4.Hogyan deklarálhatunk egy változót, és hogyan alkalmazhatóak?<br>
+Először meg kell adnunk a változó típusát (VAR, LET, CONST), változó nevét. Ha szükséges, kezdőértéket is adhatunk a változónak.
+A változók hatásköre és láthatósága attól függ, hogy hol vannak deklarálva.
+
+<br>
+<br>
+
+5.Mikor kell elágazásokat használni? Ismertesd őket (2-3 mondatban).<br>
+JavaScript-ben akkor használunk, amikor szeretnénk különböző feltételek alapján irányítani a program végrehajtását. 
+Az elágazások lehetővé teszik, hogy a program döntsön arról, hogy melyik kódrészletet hajtsa végre, a feltételek alapján.
+
+<br>
+<br>
+
+6.Mik azok az Objectek? Írj egy példát is.<br>
+Az objektumok JavaScript-ben kulcs-érték párok gyűjteményei, amelyeket egyetlen változóban tárolunk.
+let szemely = {<br>
+    nev: "Gorcsa Gabor",<br>
+    kor: 26,<br>
+    };<br>
+
+<br>
+<br>
+
+7.Helyes e a következő példa, ha nem miért nem?!pl: let x :  [ { x= fname: “John”, lname: “Doe, age: “34”},[1,2,3,4, “yes”, “no”] ];<br>
+Nem, a következő hibák miatt:<br>
+A let x részben a kettőspont (:) helyett egyenlőségjelet (=) használunk az értékadásra.<br>
+Az objektumok létrehozásához kapcsos zárójeleket {} kell használni, nem szögletes zárójeleket [].<br>
+Az első objektum definíciójában hiányzik a zárójel a kulcs-érték párok között.<br>
+A age: “34” részben hiányzik a zárójel a kulcs-érték párok között.<br>
+<br>
+<br>
+
+8.Mik azok az Array-ek? Írj egy példát is.<br>
+Tömb (adatszerkezet)<br>
+let szamok = [1, 2, 3, 4, 5];<br>
+let nevek = ["John", "Jane", "Bob"];<br>
+let vegyes = [1, "hello", true];<br>
+
+<br>
+<br>
+
+9.Hogyan vizsgálható egy tömb? 2-3 példát írj kérlek.<br>
+Tömb hossza: A tömböknek van egy length tulajdonságuk, amely visszaadja a tömbben található elemek számát.
+Tömb ürességének ellenőrzése: A tömbök ürességét az length tulajdonság segítségével lehet ellenőrizni.
+Adott elem jelenléte a tömbben.
+Tömb típusának ellenőrzése.
+
+<br>
+<br>
+
+10.Hogyan mehetünk végig egy tömb/object/lista hosszán?<br>
+JavaScript-ben többféle módon tudsz végigmenni egy tömbön, objektumon vagy listán, attól függően, hogy milyen adatszerkezetről van szó.
+
+<br>
+<br>
+
+11.Sorolj fel néhány events metódus.<br>
+Az addEventListener metódus segítségével hozzáadhatunk egy eseménykezelőt egy adott eseményhez egy elemhez.
+Az onscroll eseményt használhatjuk egy elem görgetése eseményének kezelésére
+Az onclick  esemény metódust használhatjuk egy elemhez való kattintás eseményének kezelésére.
+
+
+<br>
+<br>
+
+12.Miért érdemes függvényeket használni?<br>
+Újrafelhasználhatóság, Kód rendezettsége: Függvények segítségével rendezheted a kódot logikus egységekre.
+Kód újratervezése és karbantarthatóság, Hibaellenőrzés és hibakezelés.
+
+<br>
+<br>
+
+13.Hogyan paraméterezhetünk fel egy függvényt?<br>
+A paraméterek lehetővé teszik, hogy adatokat adjunk át a függvénynek, amelyeket a függvény a végrehajtás során felhasználhat.
+A paraméterek definiálásához a függvény deklarációjában, a nyitó zárójel előtt kell felsorolni őket.
+
+
+<br>
+<br>
+
+14.Mi az a function visszatérési érték?<br>
+Érték visszaadása egy függvény segítségével eredményeket vagy számított értékeket adhatsz vissza.
+
+<br>
+<br>
+
+15.Mikor futtatható egy függvény?<br>
+Egy függvény futtatható, amikor azt meghívjuk. A függvény meghívása azt jelenti, hogy végrehajtjuk a függvényben található kódot, és a függvény műveleteit elvégezzük.
+
+<br>
+<br>
+
+16.Mi az a DOM?<br>
+Egy programozási interfész, amely a weboldalak strukturált reprezentációját nyújtja. A DOM modell lehetővé teszi a JavaScript számára, hogy manipulálja és módosítsa a weboldal tartalmát és stílusát.
+
+
+<br>
+<br>
+
+17.Mire utasít a következő példa: document.getElementByClassName(“example”).innerText<br>
+Ez a kód megpróbálja megtalálni az összes "example" osztályú elemet a dokumentumban, majd visszaadja a kiválasztott elemek szövegtartalmát.
+
+<br>
+<br>
+
+18.Hogyan nyerhető ki egy form input mező értéke és hogyan jeleníted azt meg HTML-ben?<br>
+Az id attribútum segítségével azonosítjuk az input mezőt és a gombot.
+Az onclick eseménykezelőhöz rendeljük a függvényt, amely meghívódik, amikor a gombra kattintunk.
+<br>
+<br>
+
+19.Mi az a callback function?<br>
+Egy callback function (visszahívási függvény) egy olyan függvény, amelyet egy másik függvénynek vagy metódusnak adhatunk át paraméterként.
+
+<br>
+<br>
+
+20.Definiált: Date();<br>
+Az Date() egy beépített objektum a JavaScriptben, amelyet a dátum és idő kezelésére használhatunk.
+
+
+<br>
+<br>
+
+21.Definiáld: onclick();<br>
+Az onclick() egy eseménykezelő metódus a JavaScriptben, amelyet gyakran használunk az interaktív weboldalakon
+
+<br>
+<br>
+
+22.Definiáld: function Click(){…};<br>
+A function Click() {...} egy függvény definíció. A Click nevű függvényt létrehozza, és a kapcsos zárójelek közötti blokkban tartalmazza a függvény testét, vagyis azt a kódot, amit a függvény végrehajt, amikor meghívják.
+
+    
+</body>
+</html>
