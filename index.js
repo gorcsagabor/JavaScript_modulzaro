@@ -1,34 +1,20 @@
-  var data = [
+// Első feladat
+var data = [
     [1, 2, 3],
     ['alma', 'banán', 'körte'],
-    { segítő: 'Janos', kor: 31 },
-    'NEVED'
+    { segítő: 'János', kor: 26 },
+    'Gábor', 'János', 'Béla', 'Ricsi'
   ];
   
   function checkName() {
     var name = document.getElementById('name').value;
-    var result = document.getElementById('result1');
+    var result = document.getElementById('result');
   
-    var exists = false;
-  
-    for (var i = 0; i < database.length; i++) {
-      if (isEqual(database[i], name)) {
-        exists = true;
-        break;
-      }
-    }
-  
-    if (exists) {
-      result1.innerHTML = 'Már regisztrálva vagy.';
+    if (data.includes(name)) {
+      result.textContent = 'Regisztrált tag vagy.';
+      var segítő = ' János '
+      result.textContent += ' A Te segítőd: ' + segítő + '( hozzá fordulhatsz segítségért)';
     } else {
-      result1.innerHTML = 'Nem létezik ilyen felhasználó.';
-    }
-  }
-  
-  function isEqual(value, name) {
-    if (Array.isArray(value)) {
-      return value.includes(name);
-    } else {
-      return value === name;
+      result.textContent = 'Nem vagy regisztrált tag.';
     }
   };
