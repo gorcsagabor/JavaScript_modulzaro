@@ -3,25 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JS vizsga</title>
     <link rel="stylesheet" href="index.css">
+    <title>Gorcsa Gábor</title>
 </head>
 <body>
-    <h1>Gorcsa Gabor JS</h1>
-    <form class="form">
-        <label for="name">Név:</label>
+    <h1>Regisztráció</h1>
+    
+        <label for="name">Név :</label>
         <input type="text" id="name" required placeholder="Kérjük írja be a nevét">
-        <br><br>
-        <input type="submit" onclick="CheckName()">
-        <br><br>
-        <button onclick="helper()">Segítő</button>
-        
+        <br>
+        <button onclick="checkName()">Ellenőrzés</button>
 
-        <p id="result1"></p>
-        <p id="result2"></p>
-    </form>
+        <p id="result"></p>
 
-
-    <srcipt src="index.js"></srcipt>
+    <script src="index.js"></script>
 </body>
 </html>
